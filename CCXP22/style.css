@@ -1,0 +1,218 @@
+body{
+    margin: 0px;
+    padding: 0px;
+
+    font-family: 'Verdana';
+    font-style: normal;
+}
+
+header{
+    background-color: #FFD900;
+    padding: 1% 2%;
+}
+
+#info{
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 0px;
+    padding-top: 0px;
+}
+
+    #infoLeft{
+        background-color: #514988;
+        color: #FFFFFF;
+        text-align: center;
+        border-bottom-left-radius: 2%;
+        border-bottom-right-radius: 2%;
+    }
+
+        #infoLeft h1{
+            font-size: 3vw;
+            color: #F3C61F;
+        }
+
+        #infoLeft h3{
+            font-size: 1.5vw;
+        }
+
+        #infoLeft p{
+            word-wrap: break-word;
+            margin: 20px;
+            font-size: 1.2vw;
+            text-align: center;
+            padding: 5%;
+        }
+
+    #infoRight{
+
+        text-align: center;
+    }
+
+        .timer{
+            display: flex;
+            justify-content: space-evenly;
+            font-size: 2vw;
+            color: #514988;
+        }
+
+        #infoRight h3{
+            text-align: center;
+            font-size: 1.5vw;
+            color: #E33881;
+            padding: 0px;
+
+            margin-top: -30px;
+        }
+
+        video{
+            border-radius: 2%;
+
+            min-width: 60%; 
+            max-width: 90vh;
+            /*estou fazendo teste no notebook e no monitor ultrawide que uso, e esta foi uma das formas
+            como consegui deixar mais padronizado em ambas as telas*/
+        }
+
+
+.tickets{
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 1fr 1fr;
+}
+
+    .ticketDays{
+        text-align: center;
+    }
+
+        .ticketDays h3{
+            color: #F3C61F;
+        }
+
+        .ticketDays ul{
+            display: flex;
+            flex-direction: row;
+            list-style: none;
+            justify-content: center;
+        }
+
+    
+    .tickets #botao{ /*se eu usasse essa ID no <button>, não funcionaria*/
+        justify-self: center; /*justify-self e align-self funcionam dentro de flex containers e grid containers*/
+        align-self: center;
+    }
+
+    .tickets button{
+        background: #514988;
+        border-radius: 20px;
+        width: 400px;
+        height: 100px;
+        font-size: 30px;
+        color: #FFFFFF;
+    }
+
+    button:hover{
+        color: #F3C61F;
+    }
+
+
+/*RESPONSIVE DESIGN*/
+@media only screen and (max-width: 600px) {
+#info{
+    display: flex;
+    flex-direction: column;
+}
+
+    #infoLeft h1{
+        font-size: 6vw;;
+        color: #F3C61F;
+    }
+
+    #infoLeft h3{
+        font-size: 4vw;
+    }
+
+    #infoLeft p{
+        font-size: 3vw;
+    }
+
+    #infoRigth .timer{
+        justify-items: center;
+    }
+    
+    .timer{
+        font-size: 5vw;
+
+    }
+
+    #infoRight h3{
+        text-align: center;
+        margin-top: -10px;
+        font-size: 4vw;
+    }
+
+    video{
+        min-width: 60%; 
+        max-width: 45vh;
+    }
+
+.tickets{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .ticketDays h3{
+        color: #F3C61F;
+        font-size: 3.5vw;
+    }
+
+
+    .ticketDays ul{
+        width: 80vw;
+    }
+
+    .ticketDays ul img{
+        height: 25vw;
+    }
+
+    .tickets button{
+        width: 250px;
+        height: 60px;
+        font-size: 20px;
+    }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1000px) {
+    #infoLeft p{
+        font-size: 1.5vw;
+    }
+
+    #infoRight h3{
+        margin-top: -10px;
+    }
+
+    video{
+        min-width: 40%; 
+        max-width: 35vh;
+    }
+
+.tickets{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .ticketDays ul{
+        width: 90vw;
+    }
+
+    .ticketDays ul img{
+        height: 20vw;
+    }
+
+    .tickets button{
+        width: 250px;
+        height: 70px;
+        font-size: 20px;
+    }
+
+}

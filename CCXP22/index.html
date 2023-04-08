@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> CCXP 2022 </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="media/ccxpheader.svg">
+    </header>
+
+    <section id="info">
+        <div id="infoLeft">
+            <h1>REVIVA O ÉPICO</h1>
+            <h3>DE 01 A 04 DE DEZEMBRO</h3>
+            <p>Você consegue sentir? É aquela sensação de finalmente poder falar em voz alta: 
+                "estamos em casa". Sim, em dezembro de 2022, teremos a volta da CCXP física. 
+                Mas não será qualquer CCXP, vai ser a maior de todos os tempos. 
+                Prepare-se para visitar seus universos favoritos, explorar o Artists' Valley, 
+                se emocionar nos auditórios e encontrar aventuras épicas a cada passo pelos nossos corredores.</p>
+        </div>
+        <div id="infoRight">
+            <div class="timer">
+                <div class="timerSpacing">
+                    <h1 id="dia">00</h1>
+                </div>
+                <div class="timerSpacing">
+                    <h1 id="hora">00</h1>
+                </div>
+                <div class="timerSpacing">
+                    <h1 id="minuto">00</h1>
+                </div>
+                <div class="timerSpacing">
+                    <h1 id="segundo">00</h1>
+                </div>
+            </div>
+            <h3>PARA A MAIOR CCXP DE TODOS OS TEMPOS</h3>
+            <div>
+               <video width="100%" controls loop autoplay muted id="loopVideo"><source src="media/Arlequina.mp4" type="video/mp4"></source></video>
+                <!--deixar só "autoplay" não estava funcionando; os navagadores "exigem" que esteja mudo também, 
+                    por isso o "muted"-->
+            </div>
+        </div>
+    </section>
+
+    <section class="tickets">
+        <div class="ticketDays">
+            <h3>AINDA DÁ TEMPO DE GARANTIR O SEU, MAS CORRE!</h3>
+            <ul>
+                <li id="quinta"><img src="media/quinta.svg"></li>
+                <li id="sexta"><img src="media/sexta.svg"></li>
+                <li id="sabado"><img src="media/sabado.svg"></li>
+                <li id="domingo"><img src="media/domingo.svg"></li>
+            </ul>
+        </div> 
+        <div id="botao">
+            <button>GARANTA O SEU!</button>
+        </div>
+
+    </section>
+
+    <script src="timer.js"></script>
+    <script src="video.js"></script>
+</body>
+</html>
